@@ -1,11 +1,11 @@
 package com.project.spring_security_auth_api.login.security;
 
-import java.security.AlgorithmConstraints;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Description;
 import org.springframework.stereotype.Service;
 
 import com.auth0.jwt.JWT;
@@ -14,6 +14,7 @@ import com.auth0.jwt.exceptions.JWTCreationException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.project.spring_security_auth_api.login.domain.User;
 
+@Description("Generate and Validate Tokens.")
 @Service
 public class TokenService {
 
