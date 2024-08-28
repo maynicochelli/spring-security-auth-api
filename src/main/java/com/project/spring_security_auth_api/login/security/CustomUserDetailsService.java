@@ -7,11 +7,13 @@ import org.springframework.context.annotation.Description;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
 import com.project.spring_security_auth_api.login.domain.User;
 import com.project.spring_security_auth_api.login.repositories.UserRepository;
 
 @Description("Load Application Users.")
+@Service
 public class CustomUserDetailsService implements UserDetailsService {
 
   @Autowired
